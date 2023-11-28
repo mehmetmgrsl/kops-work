@@ -64,6 +64,11 @@ kops create cluster \
 
 ```kops delete cluster --name ${NAME} --yes```
 
+### Delete S3 bucket
+
+```aws s3 rb ${KOPS_STATE_STORE}```
+
+
 
 ### Resources
 1. [kOps - Kubernetes Operations](https://kops.sigs.k8s.io/)
